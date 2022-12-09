@@ -19,6 +19,11 @@
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 		<logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
 	</properties>
+	<properties>
+		<docker.image.prefix>kammana</docker.image.prefix>
+		<sonar.host.url>http://3.238.95.192:9000/</sonar.host.url>
+
+	</properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -41,12 +46,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://18.212.32.233:8081/repository/sample-snapshots/</url>
+		    <url>http://3.83.193.42:8081/repository/sample-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://18.212.32.233:8081/repository/sample-releases/</url>
+		    <url>http://3.83.193.42:8081/repository/sample-releases/</url>
 		</repository>
   	</distributionManagement>
 
